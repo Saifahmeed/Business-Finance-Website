@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adham Ali | Portfolio Diversification Investor</title>
+  <meta name="description"
+    content="Personal investment portfolio website for Adham Ali - Dubai-based investor specializing in S&P 500 diversification strategies.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader-overlay" id="loader">
+    <div class="loader-ring" style="position:relative"></div>
+    <div class="loader-text">جاري التحميل...</div>
+  </div>
+
+  <!-- FLOATING MONEY BG -->
+  <div class="money-bg" id="moneyBg"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="logo">ADHAM<span>ALI</span></div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#stocks">Stocks</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#analysis">Analysis</a></li>
+      <li><a href="#findings">Findings</a></li>
+      <li><a href="#game">Game</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img src="Adham.png" alt="Adham Ali" class="hero-photo">
+      <h1>Adham Ali</h1>
+      <div class="arabic-name">أدهم علي</div>
+      <div class="tagline">Portfolio Diversification & Risk Strategy</div>
+      <div class="location">📍 Dubai, UAE &nbsp;|&nbsp; 🏛 AUC Finance</div>
+    </div>
+    <div class="scroll-hint">SCROLL<br>▼</div>
+    <div class="hero-line"></div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <div class="section-header fade-in">
+      <h2>Investment Overview</h2>
+      <div class="ar">نظرة عامة على الاستثمار</div>
+      <div class="gold-line"></div>
+      <p>S&P 500 Portfolio Diversification Analysis — March 2023 to March 2026</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card fade-in">
+        <div class="icon">📊</div>
+        <h3>25 Portfolios Built</h3>
+        <div class="stat"><span class="counter" data-target="25">0</span></div>
+        <p>Incrementally constructed from 1 to 25 stocks, ranked by Coefficient of Variation for optimal selection.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="icon">🏆</div>
+        <h3>Optimal Portfolio</h3>
+        <div class="stat">P5 — CV 7.03</div>
+        <p>Portfolio 5 achieves the lowest CV of 7.029 — the best risk-adjusted performance across all portfolios.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="icon">📉</div>
+        <h3>Risk Reduced 38%</h3>
+        <div class="stat"><span class="counter" data-target="38">0</span>%</div>
+        <p>Standard deviation dropped from peak 0.0169 (P2) to minimum 0.0102 (P14), proving diversification works.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="icon">🌍</div>
+        <h3>Multi-Sector Coverage</h3>
+        <div class="stat"><span class="counter" data-target="9">0</span> Sectors</div>
+        <p>Technology, Financials, Healthcare, Energy, Industrials, Consumer Cyclical, Defensive, Communications & more.
+        </p>
+      </div>
+      <div class="card fade-in">
+        <div class="icon">📅</div>
+        <h3>3-Year Analysis</h3>
+        <div class="stat">2023–2026</div>
+        <p>Capturing the Russia-Ukraine war aftermath, Red Sea crisis, and Strait of Hormuz events.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="icon">⚖️</div>
+        <h3>Equal Weight Strategy</h3>
+        <div class="stat">W = 1/n</div>
+        <p>Each stock carries equal weight (100%/n) to isolate pure diversification effects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section id="methodology" style="background:var(--dark2)">
+    <div class="section-header fade-in">
+      <h2>Methodology</h2>
+      <div class="ar">المنهجية</div>
+      <div class="gold-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item fade-in">
+        <h3>1. Stock Selection</h3>
+        <p>Started with 35 S&P 500 candidates across multiple sectors for maximum diversity.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h3>2. Data Collection</h3>
+        <p>3 years of daily closing prices (Mar 2023 – Mar 2026) from investing.com.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h3>3. Daily Returns</h3>
+        <p>Calculated using Rₜ = (Pₜ - Pₜ₋₁) / Pₜ₋₁ for all stocks.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h3>4. Outlier Removal</h3>
+        <p>Excluded returns beyond ±30% and removed 10 stocks with negative/extreme CVs.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h3>5. CV Ranking</h3>
+        <p>Ranked remaining 25 stocks by CV (lowest → highest) for portfolio construction order.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h3>6. Portfolio Construction</h3>
+        <p>Built 25 portfolios incrementally using covariance matrices and equal weighting.</p>
+      </div>
+      <div class="timeline-item fade-in">
+        <h3>7. Comparative Analysis</h3>
+        <p>Analyzed Return, Risk (SD), and CV across all 25 portfolios to find the optimal one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOCKS -->
+  <section id="stocks">
+    <div class="section-header fade-in">
+      <h2>The 25 Stocks</h2>
+      <div class="ar">الأسهم الخمسة والعشرون</div>
+      <div class="gold-line"></div>
+      <p>Selected from the S&P 500 across 9 sectors</p>
+    </div>
+    <div class="stocks-grid" id="stocksGrid"></div>
+  </section>
+
+  <!-- RESULTS TABLES -->
+  <section id="results" style="background:var(--dark2)">
+    <div class="section-header fade-in">
+      <h2>Portfolio Results</h2>
+      <div class="ar">نتائج المحافظ</div>
+      <div class="gold-line"></div>
+    </div>
+    <div class="data-table-wrap fade-in">
+      <table class="data-table" id="resultsTable"></table>
+    </div>
+  </section>
+
+  <!-- CHARTS -->
+  <section id="analysis">
+    <div class="section-header fade-in">
+      <h2>Visual Analysis</h2>
+      <div class="ar">التحليل البصري</div>
+      <div class="gold-line"></div>
+    </div>
+    <div class="chart-container fade-in">
+      <div class="chart-title">📈 Mean Return Across Portfolios</div>
+      <canvas id="returnChart"></canvas>
+    </div>
+    <div class="chart-container fade-in">
+      <div class="chart-title">📉 Risk (Standard Deviation) Across Portfolios</div>
+      <canvas id="riskChart"></canvas>
+    </div>
+    <div class="chart-container fade-in">
+      <div class="chart-title">⚖️ Coefficient of Variation Across Portfolios</div>
+      <canvas id="cvChart"></canvas>
+    </div>
+  </section>
+
+  <!-- KEY FINDINGS -->
+  <section id="findings" style="background:var(--dark2)">
+    <div class="section-header fade-in">
+      <h2>Key Findings</h2>
+      <div class="ar">النتائج الرئيسية</div>
+      <div class="gold-line"></div>
+    </div>
+    <div class="findings-grid">
+      <div class="finding-card fade-in">
+        <div class="num">01</div>
+        <h3>Diversification Reduces Risk</h3>
+        <p>SD dropped from 0.0169 to 0.0102 — a 38% reduction. Unsystematic risk was nearly eliminated by Portfolio 14.
+        </p>
+      </div>
+      <div class="finding-card fade-in">
+        <div class="num">02</div>
+        <h3>Quality Over Quantity</h3>
+        <p>Portfolio 5 (CV 7.03) outperformed all others. Adding more stocks with worse CVs degraded risk-adjusted
+          returns.</p>
+      </div>
+      <div class="finding-card fade-in">
+        <div class="num">03</div>
+        <h3>Systematic Risk Floor</h3>
+        <p>After ~14 stocks, SD plateaued around 0.0105. This is market risk that cannot be diversified away.</p>
+      </div>
+      <div class="finding-card fade-in">
+        <div class="num">04</div>
+        <h3>Return Dilution Effect</h3>
+        <p>Mean return fell 51% from peak (P2: 0.00214) to P25 (0.00104) as weaker stocks were added.</p>
+      </div>
+      <div class="finding-card fade-in">
+        <div class="num">05</div>
+        <h3>The CV Paradox</h3>
+        <p>P25's CV (10.10) is worse than P1's (9.48). Full diversification hurt risk-adjusted performance with
+          low-quality additions.</p>
+      </div>
+      <div class="finding-card fade-in">
+        <div class="num">06</div>
+        <h3>Optimal Strategy</h3>
+        <p>5 high-quality stocks deliver the best risk-return balance. For pure risk minimization, 14+ stocks suffice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <!-- <section id="game">
+  <div class="section-header fade-in">
+    <h2>💰 Catch The Money!</h2>
+    <div class="ar">إلتقط الفلوس!</div>
+    <div class="gold-line"></div>
+    <p>Use ← → arrow keys or tap sides to catch falling coins. Dodge the red bombs!</p>
+  </div>
+  <div class="game-area fade-in">
+    <div class="game-score">Score: <span id="gameScore">0</span></div>
+    <div class="game-canvas-wrap">
+      <canvas id="gameCanvas" width="660" height="400"></canvas>
+    </div>
+    <div class="game-controls">
+      <button class="game-btn" onclick="startGame()">▶ START</button>
+      <button class="game-btn" onclick="resetGame()">↻ RESET</button>
+    </div>
+  </div>
+</section> -->
+
+  <!-- TEAM -->
+  <section id="team" style="background:var(--dark2)">
+    <div class="section-header fade-in">
+      <h2>Research Team</h2>
+      <div class="ar">فريق البحث</div>
+      <div class="gold-line"></div>
+      <p>FINC 2101-01 — Dr. Jasmin Fouad — The American University in Cairo</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-member fade-in">
+        <div class="avatar">L</div>
+        <h4>Laila Khalifa</h4>
+        <p>Researcher</p>
+      </div>
+      <div class="team-member fade-in">
+        <div class="avatar">M</div>
+        <h4>Malak Elrefaie</h4>
+        <p>Researcher</p>
+      </div>
+      <div class="team-member fade-in">
+        <div class="avatar">Z</div>
+        <h4>Zeina Tawfik</h4>
+        <p>Researcher</p>
+      </div>
+      <div class="team-member fade-in">
+        <div class="avatar">S</div>
+        <h4>Saif Ahmed</h4>
+        <p>Researcher</p>
+      </div>
+      <div class="team-member fade-in">
+        <div class="avatar" style="background:linear-gradient(135deg,#D4AF37,#B8860B)">A</div>
+        <h4>Adham Ahmed</h4>
+        <p>Lead Investor</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">ADHAM ALI</div>
+    <div class="footer-ar">أدهم علي — مستثمر في دبي</div>
+    <p>Portfolio Diversification & Risk Reduction Analysis — S&P 500 — May 2026</p>
+    <p style="margin-top:8px; opacity:0.5">© 2026 AUC FINC 2101 | Dr. Jasmin Fouad</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
