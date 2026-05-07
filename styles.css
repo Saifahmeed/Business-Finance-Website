@@ -546,63 +546,6 @@ section {
   letter-spacing: 1px;
 }
 
-/* GAME SECTION */
-.game-area {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.game-canvas-wrap {
-  background: var(--dark2);
-  border: 1px solid rgba(212, 175, 55, 0.15);
-  border-radius: 16px;
-  padding: 20px;
-  margin: 20px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-#gameCanvas {
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto;
-  background: #0a1a0a;
-}
-
-.game-controls {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.game-btn {
-  padding: 12px 30px;
-  border: 1px solid var(--gold);
-  background: transparent;
-  color: var(--gold);
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s;
-  letter-spacing: 1px;
-}
-
-.game-btn:hover {
-  background: var(--gold);
-  color: var(--black);
-}
-
-.game-score {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: var(--gold);
-  margin: 15px 0;
-}
-
 /* METHODOLOGY TIMELINE */
 .timeline {
   max-width: 800px;
